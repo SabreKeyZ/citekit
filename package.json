@@ -1,0 +1,62 @@
+{
+  "name": "citekit",
+  "version": "0.1.0",
+  "description": "Citation-first RAG for coding agents. Answers must quote your sources.",
+  "type": "module",
+  "bin": {
+    "citekit": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "demo-corpus",
+    "skills",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test test/*.test.ts",
+    "demo": "node dist/cli.js demo",
+    "doctor": "node dist/cli.js doctor",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rag",
+    "citations",
+    "mcp",
+    "cli",
+    "agents",
+    "bm25",
+    "retrieval"
+  ],
+  "author": "CiteKit contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabreKeyZ/citekit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SabreKeyZ/citekit/issues"
+  },
+  "homepage": "https://github.com/SabreKeyZ/citekit#readme",
+  "dependencies": {
+    "minisearch": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
