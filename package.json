@@ -1,7 +1,7 @@
 {
   "name": "citekit",
   "version": "0.1.0",
-  "description": "Citation-first RAG for coding agents. Answers must quote your sources.",
+  "description": "Citation-first RAG for coding agents / 给编程 Agent 用的引用式 RAG。答案必须引用原文。",
   "type": "module",
   "bin": {
     "citekit": "dist/cli.js"

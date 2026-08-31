@@ -37,7 +37,7 @@ function graph(sessions: AskResult[]): { nodes: Array<{ id: string; label: strin
 }
 
 export function renderBoard(payload: LastAnswerFile): string {
-  const title = "CiteKit evidence board";
+  const title = "CiteKit · 引用式 RAG";
   const data = {
     ...payload,
     graph: graph(payload.sessions),
@@ -144,9 +144,9 @@ export function renderBoard(payload: LastAnswerFile): string {
   <div class="wrap">
     <header>
       <div>
-        <div class="brand">CiteKit</div>
+        <div class="brand">CiteKit · 引用式 RAG</div>
         <h1>Evidence board</h1>
-        <p class="lede">Every claim below is a quote with an exact source span. If retrieval is weak, CiteKit refuses instead of inventing a citation.</p>
+        <p class="lede">Every claim is a quoted span. If retrieval is weak, CiteKit refuses. / 每条论断都必须引用原文；检索不够强就拒绝回答。</p>
       </div>
       <button class="theme" id="themeBtn" type="button">Light</button>
     </header>

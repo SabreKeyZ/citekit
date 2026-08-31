@@ -1,6 +1,6 @@
-# CiteKit
+# CiteKit · 引用式 RAG
 
-**Citation-first RAG for coding agents.**
+**Citation-first RAG for coding agents / 给编程 Agent 用的引用式 RAG。答案必须引用原文。**
 
 Ingest a folder. Ask a question. The answer may only use retrieved quotes, and every claim carries a span like `docs/auth.md:42-58`. If retrieval is weak, CiteKit **refuses** instead of hallucinating a source.
 
